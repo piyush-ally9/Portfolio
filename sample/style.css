@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f5f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+/* Custom blob-like shape */
+.background-shape {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background-color: #ffc107;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    /* Custom shape using clip-path */
+    clip-path: polygon(50% 0%, 90% 20%, 100% 50%, 85% 100%, 20% 85%, 0% 50%);
+}
+
+/* Profile image */
+.profile-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Awards */
+.award-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    top: 40%;
+}
+
+.award-box {
+    width: 180px;
+    padding: 20px;
+    border-radius: 18px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Different colors for each box */
+.blue {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.yellow {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.green {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.logos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
